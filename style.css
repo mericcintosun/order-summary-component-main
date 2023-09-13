@@ -2,7 +2,7 @@
 :root {
   --clr-primary-100: hsl(225, 100%, 94%);
   --clr-primary-900: hsl(245, 75%, 52%);
-  --bg-primary-100-opacity: hsla(225, 100%, 94%, 0.4);
+  --bgclr-primary-100-opacity: hsla(225, 75%, 94%, 0.4);
   --clr-neutral-100:hsl(225, 100%, 98%);
   --clr-neutral-400:hsl(224, 23%, 55%);
   --clr-neutral-900: hsl(223, 47%, 23%);
@@ -85,9 +85,6 @@ svg {
   }
 }
 
-/*  CSS Reset - End */
-
-/* Genel Styles - Start */
 
 body {
   background-image: url(images/pattern-background-mobile.svg);
@@ -104,6 +101,9 @@ main {
     aspect-ratio: 1 / 1;
     margin: auto;
 }
+.card-img > img {
+  width: 100%;
+}
 .card {
   max-width: 90%;
   margin-inline:auto;
@@ -115,8 +115,9 @@ main {
 .card-body {
   margin-top: 1rem;
 }
-.card-img > img {
-  width: 100%;
+.grid {
+  display: grid;
+  gap: 1rem;
 }
 .grid-flow {
   width: 80%;
@@ -127,27 +128,9 @@ main {
 .plan-body {
   display: flex;
   justify-content: space-between;
-  background-color: var(--bg-primary-100-opacity);
+  background-color: var(--bgclr-primary-100-opacity);
   border-radius: 1rem;
 }
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-.plan-details {
-  display: flex;
-}
-.holder-button {
-  padding: .7rem 1rem;
-  background-color:var(--clr-primary-900);
-  border-radius: 1rem;
-  font-weight: var(--fw-semibold);
-}
-
-/* Genel Styles - End */
-
-/* Details Styles - Start */
-
 .btn {
   border: none;
   background: none;
@@ -162,7 +145,9 @@ main {
   opacity: 0.7;
   text-decoration: none;
 }
-
+.plan-details {
+  display: flex;
+}
 .plan-title {
   margin-left: 1rem;
 }
@@ -170,7 +155,12 @@ main {
   display: grid;
   grid-template-columns: 1fr;
 }
-
+.holder-button {
+  padding: .7rem 1rem;
+  background-color:var(--clr-primary-900);
+  border-radius: 1rem;
+  font-weight: var(--fw-semibold);
+}
 #payment-button {color:var(--clr-neutral-100); transition:background-color .2s}
 #payment-button:hover {
   background-color: var(--clr-neutral-400);
@@ -196,10 +186,6 @@ main {
 }
 #annual-plan-text {font-weight: var(--fw-semibold);}
 
-/* Details Styles - End */
-
-/* Responsive Start */
-
 @media (min-width:450px) {
 
   body {
@@ -210,5 +196,3 @@ main {
     max-width: 27.5em;
   }
 }
-
-/* Responsive End */
