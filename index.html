@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+ 
+  </style>
+</head>
+<body>
+ 
+ <main>
+  <article class="card grid">
+    <div class="card-img">
+      <img src="images/illustration-hero.svg" alt="">
+    </div>
+    <div class="card-body grid-flow">
+      <h1 class="title">Order Summary</h1>
+      <p class="clamp-text paragraph text-opacity">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+    </div>
+    <div class="plan-body grid-flow">
+      <div class="plan-details">
+        <img src="images/icon-music.svg" alt="">
+        <div class="plan-title">
+          <p id="annual-plan-text" class="clamp-text">Annual Plan</p>
+          <p id="price" class="clamp-text text-opacity">$59.99/year</p>
+        </div>
+      </div>
+      <button class="btn change-button">Change</button>
+    </div>
+    <div class="button-holder grid-flow">
+      <button id="payment-button" class="btn holder-button clamp-text">Proceed to Payment</button>
+      <button id="cancel-button" class="btn holder-button clamp-text text-opacity">Cancel Order</button>
+    </div>
+  </article>
+ </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Meric Cintosun</a>.
+  </div> -->
+
+</body>
+</html>
